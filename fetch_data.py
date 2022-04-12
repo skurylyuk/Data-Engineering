@@ -1,4 +1,9 @@
-def get_data(:)
+import pandas as pd
+from sodapy import Socrata
+from sqlalchemy import create_engine, inspect
+import sqlite3
+
+def get_data():
 # # Import SQL File
 	engine = create_engine("sqlite:///inspections.db", echo=False)
 
